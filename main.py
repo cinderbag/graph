@@ -1,16 +1,12 @@
-ohelp = """
+from num2words import num2words
+
+help = """
 /help:      Prints a list of all possible commands
-/define:    Allows user to input values to be used in calculations
-/add:       adds all defined variables
+/define:    Allows user to input values to be used in calculations 
 """
 
 def commandchecker():
     x = input()
-    
-    if x == '':
-        print('Blank Command Go ahead and type something!')
-        commandchecker()
-    
     if x == '/help':
         print(help)
         commandchecker()
@@ -30,9 +26,10 @@ def definevar():
     a = int(a)
     x = a
     while x > 0:
-        print('1')
-        x = x-1
+        n = 1
+        xval = input('What is the' +  + ' x value?')
+        yval = input('What is the' +  + ' y value?')
 
-
+print('Welcome to graph utility type /help for a list of commands')
 
 commandchecker()
