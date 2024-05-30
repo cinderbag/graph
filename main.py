@@ -1,4 +1,4 @@
-help = """
+ohelp = """
 /help:      Prints a list of all possible commands
 /define:    Allows user to input values to be used in calculations
 /add:       adds all defined variables
@@ -15,7 +15,7 @@ def commandchecker():
         print(help)
         commandchecker()
     
-    if x == '/graph':
+    if x == '/define':
         definevar()
         commandchecker()
 
